@@ -1,0 +1,16 @@
+<h2>Image Search Abstraction Layer Project</h2>
+
+<h4>Goal: To create an abstract image search app that allows one to input parameters to search for images/pics</h4>
+
+<p>Example api call: https://www.example.com/api/imagesearch/?search=lolcats</p>
+<p>Example output: {"data":[{"link":"http://i.imgur.com/Vw9clVQ.jpg","title":"LOLcats","account_url":"downess"}]}</p>
+
+<br><br>
+
+<p><b>Allows for pagination as well</b></p>
+<p>Example api call: https://www.example.com/api/imagesearch/?search=lolcats&offset=1</p>
+<p>Example output: {"data":[{"link":"http://i.imgur.com/d1PAOZU.jpg","title":"The Net is not educational.  Just porn and lolcats.  Books are still boss.","account_url":"Lassannn"},{"link":"http://i.imgur.com/FqJTc9n.png","title":"title","account_url":"ElishaShaddock1"},{"link":"http://i.imgur.com/IQs5vr1.jpg","title":"Kitty moms have to put up with the same stuff ","account_url":null}]}</p>
+
+<p><b>To check previous searched queries: </b></p>
+<p>Example api call: https://www.example.com/api/imagesearch/last</p>
+<p>Example output: [{"_id":"56c7fc0ac4c3ae4207aa932e","last_url":"http://imagesearch-kalunlee136.c9users.io/api/imagesearch/?search=lolcats","__v":0},{"_id":"56c7fd4c123bc99807cc312b","last_url":"http://imagesearch-kalunlee136.c9users.io:80/api/imagesearch/?search=lolcats&offset=2","__v":0}]</p>
